@@ -1,0 +1,33 @@
+# GET aHEAD
+
+
+Description
+Find the flag being held on this server to get ahead of the competition 
+http://mercury.picoctf.net:34561/()
+
+# Hints
+
+1. Maybe you have more than 2 choices
+2. Check out tools like Burpsuite to modify your requests and look at the responses
+
+## Tools utilized
+
+ * [Burpsuite](https://portswigger.net/burp)
+ 
+
+## Steps
+
+- Play around on website to get a feel for what it does. As we can see, there is much involved with the website other than alternating the colors between red and blue. 
+
+- We can utilize the title of the challenge and the hints to give us an idea on what else can be done. Let's look more in HTTP Requests.
+
+- Ironcically enough, the HTTP protocol allows us to utilize different requests headers outside of GET/POST, such as HEAD. This specific [page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) even gives us examples on how to utilze the header. Let's try it.
+
+- A little knowledge of Burpsuite is required for this challenge, but not much. We are able to construct our own request using the Proxy and Repeater functions provided. Let's swap out GET with HEAD and send the request. We'll analyze what happens
+
+- WHOLA! On our first try we were able to get the flag. 
+
+
+# Takeaways
+
+This challenge was relatively easy if you have a decent understanding of HTTP requests and know how to utilze Burpsuite. 
