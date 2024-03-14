@@ -23,7 +23,7 @@ http://mercury.picoctf.net:34561/()
 
 - Ironcically enough, the HTTP protocol allows us to utilize different requests headers outside of GET/POST, such as HEAD. This specific [page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) even gives us examples on how to utilze the header. Let's try it.
 
-- A little knowledge of Burpsuite is required for this challenge, but not much. We are able to construct our own request using the Proxy and Repeater functions provided. Let's swap out GET with HEAD and send the request. We'll analyze what happens
+- A little knowledge of Burpsuite is required for this challenge, but not much. We are able to construct our own request using the Proxy and Repeater functions provided. Let's swap out GET with HEAD and send the request. We'll analyze what happens.
 
 - WHOLA! On our first try we were able to get the flag. 
 
